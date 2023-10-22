@@ -1,27 +1,73 @@
-# DioTrabalhandoComServicesNoAngular
+# Projeto de Estudos - Trabalhando com Services no Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+Este projeto foi desenvolvido como parte de um estudo sobre Services no Angular. O objetivo foi compreender os conceitos fundamentais e a implementação de Services para isolar a lógica de negócios e otimizar a aplicação.
 
-## Development server
+## Resumo dos Estudos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Os 3 pilares de um service
 
-## Code scaffolding
+- Services são arquivos Typescript para isolar as regras de negócio, diferenciando-se dos componentes.
+- Os services podem ser compartilhados por vários componentes.
+- É recomendado criar services especializados em atividades específicas para facilitar a manutenção.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Preparando estrutura de pastas
 
-## Build
+- Organização das pastas 'components' e 'services' para uma estrutura mais clara.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Preparando o componente de Pokemon
 
-## Running unit tests
+- Criação e configuração inicial do componente de Pokemon.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Estilizando um componente de Pokemon
 
-## Running end-to-end tests
+- Estilização básica do componente de Pokemon.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Desacoplando seu componente e deixando-o inteligente
 
-## Further help
+- Desacoplamento do componente e uso de propriedades e diretivas para dinamizar a exibição.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Entendendo o papel do service
+
+- Criação dos arquivos 'environments' e do serviço 'pokemonService' para integrar com a API.
+
+### A anatomia de um service
+
+- Exploração da estrutura e função de um serviço, incluindo a implementação da interface Injectable.
+
+### Como injetar um service
+
+- Injeção de dependência do serviço nos componentes e criação de métodos para interagir com a API.
+
+### Service conversando com environment
+
+- Utilização do arquivo de environment para armazenar variáveis de ambiente e configurar o service de acordo.
+
+### Trabalhando com módulos HTTP
+
+- Implementação de requisições HTTP (fetch) para interagir com a API.
+
+### Observables
+
+- Utilização de Observables para gerenciar a assincronicidade, subscrição e manipulação de dados.
+
+### Trabalhando com o subscribe
+
+- Configuração e utilização de subscribe para lidar com os dados obtidos.
+
+### Terminando de tipar os dados
+
+- Adição de tipagem aos dados e componentes para garantir a consistência do código.
+
+### Adicionar pesquisa por Pokemon
+
+- Implementação de pesquisa de Pokemon utilizando o módulo FormsModule.
+
+## Instalação e Execução
+
+Para executar este projeto localmente, siga as instruções abaixo:
+
+1. Clone este repositório em seu ambiente local.
+2. Navegue até o diretório do projeto.
+3. Execute `npm install` para instalar as dependências.
+4. Execute `ng serve` para iniciar o servidor de desenvolvimento.
+5. Abra seu navegador e acesse `http://localhost:4200/`.
